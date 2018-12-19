@@ -5,6 +5,14 @@
 "version": "1.0",
 "content_scripts": [{
   "matches": ["*://*/*"],    
-  "js": ["content_scripts/main.js"]
-}]
+  "js": [
+         "node_modules/compromise/builds/compromise.js",
+         "node_modules/jquery/dist/jquery.js",
+         "node_modules/jqcloud2/dist/jqcloud.js",
+         "content_scripts/main.js"
+        ],
+         "css": [
+         "node_modules/jqcloud2/dist/jqcloud.css"
+        ]
+  }]
 }
